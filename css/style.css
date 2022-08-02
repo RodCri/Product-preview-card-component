@@ -14,9 +14,123 @@
 }
 html{
   font-size: 62.5%;
-  /* font-family: 'Montserrat', sans-serif; */
 }
 body{
   font-family: 'Fraunces', serif;
   font-size: 1em;
+}
+.content{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3eae3;
+}
+.card{
+  width: 90%;
+  max-width: 340px;
+  max-height: 615px;
+  background-color: var(--white);
+  border-radius: 1em;
+  overflow: hidden;
+}
+.product{
+  width: 100%;
+  min-height: 240px;
+}
+.card__info{
+  margin: 2.4em 0;
+  padding: 0 2.5em;
+}
+.card__info-subtitle{
+  color: var(--dark-grayish-blue);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: .5em;
+  margin-bottom: 1.5em;
+}
+.card__info-title{
+  color: var(--very-dark-blue);
+  font-size: 1.8em;
+  margin-bottom: 1.2em;
+  line-height: 1.5em;
+}
+.card__info-description{
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+.card__info-prices{
+  display: flex;
+  gap: 2em;
+  margin-bottom: 2.5em;
+  align-items: center;
+}
+.price{
+  font-size: 2em;
+  color: var(--dark-cyan);
+}
+.previous-price{
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  font-size: 1em;
+}
+button{
+  border: none;
+}
+.cta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8em;
+  background-color: var(--dark-cyan);
+  width: 100%;
+  height: 40px;
+  border-radius: .5em;
+  color: var(--white);
+  font-weight: 700;
+}
+.cta:hover{
+  background-color: #1a4031;
+}
+@media(min-width:920px){
+  .card{
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+  }
+  .card__figure{
+    width: 50%;
+  }
+  .product{
+    content: url('../images/image-product-desktop.jpg');
+    height: 100%;
+  }
+  .card__info{
+    width: 50%;
+    margin: 3.5em 0;
+    padding: 0 3.5em;
+  }
+  .card__info-title{
+    font-size: 2.2em;
+    margin-bottom: 1.5em;
+  }
+  .card__info-description{
+    line-height: 1.8em;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+  .card__info-prices{
+    margin-bottom: 3em;
+  }
+  .price{
+    font-size: 2.5em;
+  }
+  .previous-price{
+    font-size: 1.2em;
+  }
 }
