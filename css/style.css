@@ -101,18 +101,18 @@ button{
   .card{
     display: flex;
     flex-direction: row;
-    max-width: 500px;
-    max-height: 600px;
+    max-width: 600px;
+    max-height: 480px;
   }
   .card__figure{
     width: 50%;
   }
-  .product{
+  .card__figure img{
     content: url('../images/image-product-desktop.jpg');
     height: 100%;
     object-fit: cover;
     background-position: center;
-    background-position: center;
+    background-size: cover;
   }
   .card__info{
     width: 50%;
