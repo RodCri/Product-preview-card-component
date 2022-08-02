@@ -109,6 +109,7 @@ button{
   .product{
     content: url('../images/image-product-desktop.jpg');
     height: 100%;
+    object-fit: cover;
   }
   .card__info{
     width: 50%;
@@ -116,8 +117,9 @@ button{
     padding: 0 3.5em;
   }
   .card__info-title{
-    font-size: 2.2em;
+    font-size: 2.5em;
     margin-bottom: 1.5em;
+    font-weight: 700;
   }
   .card__info-description{
     line-height: 1.8em;
@@ -128,9 +130,14 @@ button{
     margin-bottom: 3em;
   }
   .price{
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: 700;
   }
   .previous-price{
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  .cta{
+    height: 50px;
   }
 }
