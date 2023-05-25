@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Product preview card component</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Challenge build out this product preview card component and get it looking as close to the design as possible.">
+  <meta name="description"
+    content="Challenge build out this product preview card component and get it looking as close to the design as possible.">
   <meta name="keywords" content="Challenge, card, Product preview, Frontend, frontendmentor">
   <meta name="author" content="Cristian Camilo Rodriguez">
 </head>
+
 <body>
   <main class="content">
     <section class="card">
-      <div class="card__figure">
+      <picture class="card__figure">
+        <source media="(min-width: 920px)" srcset="images/image-product-desktop.jpg">
         <img src="images/image-product-mobile.jpg" alt="Chenel Permufe" class="product">
-      </div>
+      </picture>
       <div class="card__info">
         <div class="card__info-subtitle">
           <p>PERFUME</p>
@@ -24,7 +28,8 @@
           <h2>Gabrielle Essence Eau De Parfum</h2>
         </div>
         <div class="card__info-description">
-          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+            CHANEL.</p>
         </div>
         <div class="card__info-prices">
           <p class="price">$149.99</p>
@@ -37,4 +42,5 @@
     </section>
   </main>
 </body>
+
 </html>
